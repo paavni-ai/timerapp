@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    2 <html lang="en">
+    3 <head>
+    4     <meta charset="UTF-axR-8">
+    5     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    6     <title>Pomodoro Timer</title>
+    7     <link rel="stylesheet" href="style.css">
+    8 </head>
+    9 <body>
+   10     <div class="container">
+   11         <h1>Study App</h1>
+   12         <div class="main-content">
+   13             <div class="timer-section">
+   14                 <h2>Pomodoro Timer</h2>
+   15                 <div class="timer">
+   16                     <span id="minutes">25</span>
+   17                     <span>:</span>
+   18                     <span id="seconds">00</span>
+   19                 </div>
+   20                 <div class="sessions">
+   21                     <button id="pomodoro">Pomodoro</button>
+   22                     <button id="short-break">Short Break</button>
+   23                     <button id="long-break">Long Break</button>
+   24                 </div>
+   25                 <div class="buttons">
+   26                     <button id="start">Start</button>
+   27                     <button id="stop">Stop</button>
+   28                     <button id="reset">Reset</button>
+   29                 </div>
+   30             </div>
+   31             <div class="stopwatch-section">
+   32                 <h2>Stopwatch</h2>
+   33                 <div class="stopwatch-display">
+   34                     <span id="sw-minutes">00</span>
+   35                     <span>:</span>
+   36                     <span id="sw-seconds">00</span>
+   37                     <span>:</span>
+   38                     <span id="sw-milliseconds">00</span>
+   39                 </div>
+   40                 <div class="stopwatch-buttons">
+   41                     <button id="sw-start">Start</button>
+   42                     <button id="sw-stop">Stop</button>
+   43                     <button id="sw-reset">Reset</button>
+   44                 </div>
+   45             </div>
+   46             <div class="tasks-section">
+   47                 <h2>Tasks</h2>
+   48                 <input type="text" id="new-task" placeholder="Add a new task">
+   49                 <button id="add-task">Add Task</button>
+   50                 <ul id="task-list"></ul>
+   51             </div>
+   52             <div class="notes-section">
+   53                 <h2>Notes</h2>
+   54                 <textarea id="notes-content" placeholder="Write your notes here..."></textarea>
+   55             </div>
+   56         </div>
+   57     </div>
+   58     <script src="script.js"></script>
+   59 </body>
+   60 </html>

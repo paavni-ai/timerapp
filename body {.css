@@ -1,0 +1,160 @@
+ body {
+     2     background-color: #f0f0f0;
+     3     font-family: sans-serif;
+     4     display: flex;
+     5     justify-content: center;
+     6     align-items: center;
+     7     height: 100vh;
+     8     margin: 0;
+     9 }
+    10 
+    11 .container {
+    12     display: flex;
+    13     flex-direction: column;
+    14     align-items: center;
+    15     background-color: #fff;
+    16     padding: 2rem;
+    17     border-radius: 10px;
+    18     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    19 }
+    20 
+    21 h1 {
+    22     color: #333;
+    23 }
+    24 
+    25 .main-content {
+    26     display: flex;
+    27     gap: 2rem;
+    28     margin-top: 2rem;
+    29 }
+    30 
+    31 .timer-section,
+    32 .tasks-section,
+    33 .notes-section,
+    34 .stopwatch-section {
+    35     background-color: #f9f9f9;
+    36     padding: 1.5rem;
+    37     border-radius: 8px;
+    38     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+    39 }
+    40 
+    41 .stopwatch-display {
+    42     font-size: 3rem;
+    43     margin-bottom: 1rem;
+    44     color: #007bff;
+    45 }
+    46 
+    47 .stopwatch-buttons button {
+    48     font-size: 1.2rem;
+    49     padding: 0.5rem 1rem;
+    50     margin: 0 0.5rem;
+    51     cursor: pointer;
+    52     background-color: #6c757d;
+    53     color: white;
+    54     border: none;
+    55     border-radius: 5px;
+    56     transition: background-color 0.3s ease;
+    57 }
+    58 
+    59 .stopwatch-buttons button:hover {
+    60     background-color: #5a6268;
+    61 }
+    62 
+    63 .timer {
+    64     font-size: 5rem;
+    65     margin-bottom: 1rem;
+    66     color: #4CAF50;
+    67 }
+    68 
+    69 .sessions button {
+    70     font-size: 1rem;
+    71     padding: 0.5rem 1rem;
+    72     margin: 0 0.5rem;
+    73     cursor: pointer;
+    74     background-color: #ddd;
+    75     border: none;
+    76     border-radius: 5px;
+    77     transition: background-color 0.3s ease;
+    78 }
+    79 
+    80 .sessions button.active {
+    81     background-color: #ccc;
+    82 }
+    83 
+    84 .buttons button {
+    85     font-size: 1.5rem;
+    86     padding: 0.5rem 1rem;
+    87     margin: 0 0.5rem;
+    88     cursor: pointer;
+    89     background-color: #007bff;
+    90     color: white;
+    91     border: none;
+    92     border-radius: 5px;
+    93     transition: background-color 0.3s ease;
+    94 }
+    95 
+    96 .buttons button:hover {
+    97     background-color: #0056b3;
+    98 }
+    99 
+   100 .tasks-section input[type="text"] {
+   101     padding: 0.5rem;
+   102     border: 1px solid #ddd;
+   103     border-radius: 4px;
+   104     margin-right: 0.5rem;
+   105 }
+   106 
+   107 .tasks-section button {
+   108     padding: 0.5rem 1rem;
+   109     background-color: #28a745;
+   110     color: white;
+   111     border: none;
+   112     border-radius: 4px;
+   113     cursor: pointer;
+   114 }
+   115 
+   116 .tasks-section button:hover {
+   117     background-color: #218838;
+   118 }
+   119 
+   120 #task-list {
+   121     list-style: none;
+   122     padding: 0;
+   123 }
+   124 
+   125 #task-list li {
+   126     background-color: #eee;
+   127     padding: 0.5rem;
+   128     margin-bottom: 0.5rem;
+   129     border-radius: 4px;
+   130     display: flex;
+   131     justify-content: space-between;
+   132     align-items: center;
+   133 }
+   134 
+   135 #task-list li.completed {
+   136     text-decoration: line-through;
+   137     color: #888;
+   138 }
+   139 
+   140 #task-list li button {
+   141     background-color: #dc3545;
+   142     color: white;
+   143     border: none;
+   144     padding: 0.3rem 0.6rem;
+   145     border-radius: 3px;
+   146     cursor: pointer;
+   147 }
+   148 
+   149 #task-list li button:hover {
+   150     background-color: #c82333;
+   151 }
+   152 
+   153 .notes-section textarea {
+   154     width: 100%;
+   155     height: 150px;
+   156     padding: 0.5rem;
+   157     border: 1px solid #ddd;
+   158     border-radius: 4px;
+   159     resize: vertical;
+   160 }
